@@ -19,7 +19,6 @@ export default function Task({ task: { id, title, state }, onArchiveTask, onPinT
 
       <div className="actions" onClick={event => event.stopPropagation()}>
         {state !== 'TASK_ARCHIVED' && (
-          // eslint-disable-next-line jsx-a11y/anchor-is-valid
           <a onClick={() => onPinTask(id)}>
             <span className={`icon-star`} />
           </a>
